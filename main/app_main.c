@@ -48,7 +48,7 @@
 #ifndef CONFIG_AT_SOCKET_MAX_CONN_NUM
 #define CONFIG_AT_SOCKET_MAX_CONN_NUM       1
 #endif
-#define CONFIG_AT_WEB_SERVER_SUPPORT       1
+
 #ifdef CONFIG_AT_WEB_SERVER_SUPPORT
 extern void at_web_update_sta_got_ip_flag(bool flag);
 #endif
