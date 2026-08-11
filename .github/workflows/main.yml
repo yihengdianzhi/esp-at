@@ -159,10 +159,7 @@ jobs:
         echo -e "#define CONFIG_ESP_AT_OTA_TOKEN_WROOM_02_N \"$AT_OTA_TOKEN_WROOM_02_N_1024_1024\"" >> at_ota_token.h
         echo -e "#define CONFIG_ESP_AT_OTA_SSL_TOKEN_WROOM_02_N \"$AT_OTA_TOKEN_WROOM_02_N_1024_1024\"" >> at_ota_token.h
         cd -
-       
-        echo "CONFIG_AT_WEB_SERVER_SUPPORT=y" >> sdkconfig.defaults
-        echo "CONFIG_AT_BASE_ON_SDK=y" >> sdkconfig.defaults 
-      
+          echo "CONFIG_AT_WEB_SERVER_SUPPORT=y" >> sdkconfig.defaults
         python -m pip install --user -r /home/runner/work/esp-at/esp-at/requirements.txt
         mkdir build
         echo -e "{\"platform\": \"PLATFORM_ESP8266\", \"module\": \"ESP8266_1MB\", \"silence\": 0}" > build/module_info.json
